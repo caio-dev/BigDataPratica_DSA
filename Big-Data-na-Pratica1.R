@@ -1,6 +1,9 @@
 # Big Data na Prática 1 - Analisando a Temperatura Média nas Cidades Brasileiras 
 # Não use diretórios com espaços ou acentuação
 
+# Faça o download do arquivo zip no link abaixo e descompacte na mesma pasta onde está este script. 
+# https://drive.google.com/open?id=1nSwP3Y0V7gncbnG_DccNhrTRxmUNqMqa
+
 setwd("C:/selecione o diretório onde seu arquivo está armazenado")
 getwd()
 
