@@ -10,7 +10,7 @@ library(plotly)
 library(shinythemes)
 
 # Carrega o primeiro dataset limpo
-dataset1 <- read.csv("datasets_limpos/dataset1.csv")
+dataset1 <- read.csv("dataset1.csv")
 
 # Ajusta o tipo de dado de algumas colunas
 dataset1$X..of.Subscribers.Q4.2021..Estimate. <- as.numeric(gsub(",", "", dataset1$X..of.Subscribers.Q4.2021..Estimate.))
@@ -22,9 +22,9 @@ dataset1_bar <- filter(dataset1, Country != "Switzerland")
 dataset1_bar_out <- filter(dataset1_bar, Country != "South Africa")
 
 # Carrega os datasets 2, 3 e 6
-genre <- read.csv("datasets_limpos/dataset2.csv")
-tree <- read.csv("datasets_limpos/dataset3.csv")
-countries <- read.csv("datasets_limpos/dataset6.csv")
+genre <- read.csv("dataset2.csv")
+tree <- read.csv("dataset3.csv")
+countries <- read.csv("dataset6.csv")
 
 # Filtra a lista de países removendo valores NA
 country_list <- filter(countries, is.na(parents))
